@@ -1,0 +1,32 @@
+CREATE DATABASE  IF NOT EXISTS `creditor_directory`;
+USE `creditor_directory`;
+
+--
+-- Table structure for table `creditor`
+--
+
+DROP TABLE IF EXISTS `creditor`;
+
+CREATE TABLE `creditor` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `creditor_name` varchar(80) DEFAULT NULL,
+  `attention` varchar(50) DEFAULT NULL,
+  `address1` varchar(60) DEFAULT NULL,
+  `address2` varchar(50) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `state` varchar(10) DEFAULT NULL,
+  `postal_zip` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+--
+-- Data for table `creditor`
+--
+
+-- INSERT INTO `creditor` VALUES 
+-- 	(1,'AMERICAN EXPRESS TRAVEL RELATED SERVICES COM C/O ZWICKER & ASSOCIATES P.C.',NULL,'P.O. BOX 9043',NULL,'ANDOVER','MA','01810-0943'),
+-- 	(2,'CA EMPLOYMENT DEVELOPMENT DEPT. BANKRUPTCY GROUP MIC 92E',NULL,'P.O. BOX 826880',NULL,'SACRAMENTO','CA','94280-0001'),
+-- 	(3,'GAIA INTERACTIVE INC.',NULL,'2445 AUGUSTINE DRIVE','SUITE 150','SANTA CLARA','CA','95054-3032'),
+-- 	(4,'IRS',NULL,'P.O. BOX 7346',NULL,'PHILADELPHIA','PA','19101-7346'),
+-- 	(5,'CALIFORNIA STATE BOARD OF EQUALIZATION ACCOUNT REFERENCE GROUP MIC 29',NULL,'P O BOX 942879',NULL,'PREFERRED','CA','94279-0029');
+
